@@ -39,6 +39,7 @@ nav a{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: blue;
 }
 
 .hero-container{
@@ -69,3 +70,42 @@ h1{
   border-style: none;
 }
 
+.about-me{
+  height: 60vh;
+}
+
+.about-container{
+  display: grid;
+  grid-template-columns: minmax(300px, 600px) minmax(300px,400px);
+  max-width: 90rem;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+
+h2{
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+.personal-description{
+  max-width: 525px;
+}
+
+.img-placeholder{
+  background-color: darkgray;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 50vh;
+  border-radius: 25vh;
+}
+
+.skills-container{
+  display: grid;
+}
