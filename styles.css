@@ -79,7 +79,7 @@ h1{
   grid-template-columns: minmax(300px, 600px) minmax(300px,400px);
   max-width: 90rem;
   margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 5rem;
 }
@@ -113,6 +113,10 @@ main{
   padding-top: 3rem;
 }
 
+h3{
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+}
+
 h3, .ambition-text{
   text-align: center;
 }
@@ -141,20 +145,61 @@ h3, .ambition-text{
   height: 80vh;
 }
 
+h4{
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+}
+
 h4, .project-sub{
   text-align: center;
 }
 
 .project-grouper{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(400px, 700px) minmax(400px, 700px) minmax(400px, 700px);
+  justify-content: center;
+  align-items: center;
   max-width: 70rem;
   margin: auto;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   gap: 5rem;
 }
 
 .project-container{
   border: 1px solid red;
   padding: 1rem;
+}
+
+.contact{
+  height: 35vh;
+  background-color: peru;
+  padding-top: 3rem;
+}
+
+h5{
+  text-align: center;
+  margin: auto;
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+}
+
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 35vw;
+}
+
+.personal-contact{
+  width: 20vw;
+  align-self: flex-start;
+  align-items: start;
+}
+
+footer{
+  height: 25vh;
+}
+
+.footer-link ul{
+  list-style: none;
 }
